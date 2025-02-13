@@ -3,8 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Song } from '../model/song.model';
 import { SongService } from '../services/song.service';
-import { Router } from '@angular/router';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router} from '@angular/router';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -13,6 +12,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './add-song.component.html',
   imports: [CommonModule, ReactiveFormsModule, RouterModule],  // ✅ Import ReactiveFormsModule here
   styleUrls: ['./add-song.component.css'],
+  standalone: true
 })
 export class AddSongComponent implements OnInit {
   songForm: FormGroup;

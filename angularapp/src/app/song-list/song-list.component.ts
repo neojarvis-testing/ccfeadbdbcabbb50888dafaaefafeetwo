@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   selector: 'app-song-list',
   templateUrl: './song-list.component.html',
   styleUrls: ['./song-list.component.css'],
+  standalone: true
 })
 export class SongListComponent implements OnInit {
   songs: Song[] = [];

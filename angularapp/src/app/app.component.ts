@@ -6,7 +6,8 @@ import { RouterModule } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   imports:[RouterModule],
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  standalone: true
 })
 export class AppComponent {
   title = 'Song-Management-System';
